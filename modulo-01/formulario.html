@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulários</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Formulários</h1>
+	<form action="mailto:luisgustavo.taborda@gmail.com" method="post">
+		<fieldset>
+		<legend>Informações pessoais</legend>
+
+		Nome:<br>
+		<input type="text" name="nome" required autofocus maxlength="30" autocomplete="off" placeholder="Nome"><br><br>
+
+		Campo Desativado:<br>
+		<input type="text" name="nome" required disabled placeholder="Este campo foi desativado"><br><br>
+
+		Senha:<br>
+		<input type="password" name="senha" required placeholder="Senha"><br><br>
+
+		Email:<br>
+		<input type="email" required autocomplete="off" placeholder="E-mail"><br><br>
+
+		Sexo:<br>
+		<input type="radio" name="sexo" value="masculino" checked>Masculino<br>
+		<input type="radio" name="sexo" value="feminino">Feminino<br><br>
+
+		Habilidades:<br>
+		<input type="checkbox" name="habilidades" value="HTML5" checked>HTML 5 <br>
+		<input type="checkbox" name="habilidades" value="CSS3">CSS 3 <br>
+		<input type="checkbox" name="habilidades" value="ANGULAR">ANGULAR <br>
+		<input type="checkbox" name="habilidades" value="NODEJS">NODE JS <br><br>
+
+		Quantidade:<br>
+		<input type="number" name="quantidade" min="0" max="10" step="2"><br>
+		<input type="range" name="quantidade"><br><br>
+
+		Cor:<br>
+		<input type="color" name="cor"><br><br>
+
+		Arquivo:<br>
+		<input type="file" name="file"><br><br>
+		<input type="hidden" name="id"><br><br>
+
+		URL:<br>
+		<input type="url" name="url"><br><br>
+		
+		Search:<br>
+		<input type="search" name="search"><br><br>
+
+		Telefone:<br>
+		<input type="tel" name="telefone"><br><br>
+
+		Data:<br>
+		<input type="date" name="date" min="2000-12-31" max="2020-12-31"><br><br>
+
+		Hora:<br>
+		<input type="time" name="hora"><br><br>
+
+		Mês e ano:<br>
+		<input type="month" name="mes-e-ano"><br><br>
+
+		Semana:<br>
+		<input type="week" name="semana"><br><br>
+
+		Data e hora:<br>
+		<input type="datetime-local" name="data-hora"><br><br>
+		
+		Mensagem:<br>
+		<textarea name="mensagem" id="" cols="30" rows="10" spellcheck="false"></textarea><br><br>
+		<button type="button">CV - 2019</button><br><br>
+		
+		Selecione carro:<br>
+		<select name="veiculo">
+			<optgroup label="Carros">
+			<option value="camaro">Camaro</option>
+			<option value="passat" selected>Passat</option>
+			<option value="porsche">Porsche</option>
+			</optgroup>
+
+			<optgroup label="Moto">
+			<option value="m-40">m-40</option>
+			<option value="suzuki">suzuki</option>
+			<option value="yakama">yakama</option>
+			</optgroup>
+		</select><br><br>
+
+		Cursos:<br>
+		<input name="cursos" list="lista-cursos">
+		<datalist id="lista-cursos">
+			<option value="HTML5"></option>
+			<option value="CSS3"></option>
+			<option value="ANGULAR"></option>
+		</datalist><br><br>
+		<input type="submit" name="btn-enviar" value="Enviar">
+		</fieldset>
+	</form>
+</body>
+</html>

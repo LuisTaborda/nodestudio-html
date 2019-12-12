@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tabelas</title>
+	<meta charset="utf-8">
+	<style>
+		table,th,td{
+			border:1px solid black;
+		}
+
+		th,td{
+			padding: 7px;
+		}
+		
+		thead{
+			background-color: gray;
+		}
+		tbody{
+			background: white;
+		}
+		tfoot{
+			background-color: black;
+			color : white;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tabela</h1>
+	<table>
+		<caption>Cadastro de Clientes</caption> <!-- The <caption> tag defines a table caption.-->
+		<colgroup>
+			<col class="nome">
+			<col class="email">
+			<col class="telefone">
+			<col class="cargo">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>Nome:</th>
+			<th>Email:</th>
+			<th>Telefone:</th>
+			<th>Cargo:</th>
+		</tr>	
+		</thead>
+		<tbody>
+		<tr>
+			<td>Luis Gustavo Taborda</td>
+			<td>luisgustavo.taborda@gmail.com</td>
+			<td>+55 41 99279-1428</td>
+			<td rowspan="2">Desenvolvedor Web</td>
+		</tr>
+		<tr>
+			<td>Erika Alves Garcia</td>
+			<td>erialves.garcia@gmail.com</td>
+			<td>+55 41 8777-7612</td>
+		</tr>
+		</tbody>
+		
+		<tfoot>
+		<tr>
+			<td colspan="4">Total: 2</td> <!--Agrupamento de linhas colspan e colunas rowspan = numero necessario-->
+		</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
